@@ -99,7 +99,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
             <p className="text-gray-700 font-semibold">Login to start your creative journey</p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-5">
             <div>
               <label className="block text-sm font-bold mb-2 text-purple-700">Username</label>
               <Input
