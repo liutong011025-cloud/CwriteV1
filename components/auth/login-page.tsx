@@ -83,22 +83,19 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
       </div>
 
       <div className="max-w-md w-full relative z-10">
-        <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-10 border-2 border-white/50 shadow-2xl">
+        <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-8 border-2 border-white/50 shadow-2xl">
           <div className="text-center mb-8">
-            <div className="mb-6 flex justify-center">
+            <div className="mb-4 mt-4 flex justify-center">
               <Image
                 src="/logo.png"
                 alt="Cwrite Logo"
-                width={200}
-                height={200}
+                width={280}
+                height={280}
                 className="object-contain animate-pulse"
                 priority
                 unoptimized
               />
             </div>
-            <h1 className="text-5xl font-black mb-3 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent drop-shadow-lg">
-              Cwrite
-            </h1>
             <p className="text-gray-700 font-semibold">Login to start your creative journey</p>
           </div>
 
