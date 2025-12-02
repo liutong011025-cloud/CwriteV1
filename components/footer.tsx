@@ -12,8 +12,8 @@ export default function Footer() {
         borderTop: '1px solid rgba(59, 130, 246, 0.3)',
       }}
     >
-      <div className="max-w-7xl mx-auto px-8 lg:px-12 py-16">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="max-w-7xl mx-auto px-8 lg:px-12 py-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Logo区域 */}
           <div className="flex items-center gap-10 lg:gap-12">
             {/* EdUHK Logo - 大一些 */}
@@ -58,4 +58,5 @@ export default function Footer() {
     </footer>
   )
 }
+
 
