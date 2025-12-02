@@ -85,12 +85,12 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
       <div className="max-w-md w-full relative z-10">
         <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-8 border-2 border-white/50 shadow-2xl">
           <div className="text-center mb-8">
-            <div className="mb-4 mt-4 flex justify-center">
+            <div className="mb-4 mt-8 flex justify-center">
               <Image
                 src="/logo.png"
                 alt="Cwrite Logo"
-                width={280}
-                height={280}
+                width={350}
+                height={350}
                 className="object-contain animate-pulse"
                 priority
                 unoptimized
