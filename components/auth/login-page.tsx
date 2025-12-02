@@ -83,9 +83,9 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
       </div>
 
       <div className="max-w-md w-full relative z-10">
-        <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-8 border-2 border-white/50 shadow-2xl">
-          <div className="text-center mb-8">
-            <div className="mb-4 mt-8 flex justify-center">
+        <div className="bg-white/95 backdrop-blur-xl rounded-3xl px-8 py-6 border-2 border-white/50 shadow-2xl">
+          <div className="text-center mb-6">
+            <div className="mb-3 mt-6 flex justify-center">
               <Image
                 src="/logo.png"
                 alt="Cwrite Logo"
@@ -99,7 +99,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
             <p className="text-gray-700 font-semibold">Login to start your creative journey</p>
           </div>
 
-          <div className="space-y-5">
+          <div className="space-y-4">
             <div>
               <label className="block text-sm font-bold mb-2 text-purple-700">Username</label>
               <Input
