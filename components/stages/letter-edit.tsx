@@ -222,11 +222,11 @@ export default function LetterEdit({
                   <div className="absolute left-0 top-[33px] w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-r-[16px] border-r-pink-50 transform -translate-x-full"></div>
                   
                   <div className="flex items-start gap-3">
-                    {/* Cagent Avatar - 无边框无阴影 */}
+                    {/* Muse Avatar - 无边框无阴影 */}
                     <div className="flex-shrink-0">
                       <Image
                         src="/muse-avatar.png"
-                        alt="Cagent"
+                        alt="Muse"
                         width={60}
                         height={60}
                         className="rounded-full"
@@ -236,8 +236,8 @@ export default function LetterEdit({
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-2">
                         <span className="font-bold text-sm">
-                          <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">C</span>
-                          <span className="text-purple-700">agent</span>
+                          <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">M</span>
+                          <span className="text-purple-700">use</span>
                         </span>
                         {isLoadingSuggestion && (
                           <div className="flex gap-1">
