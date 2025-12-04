@@ -104,14 +104,14 @@ export default function ProgressMentor({ stage, action, context, userId, positio
 
       if (data.error) {
         console.error("Progress Mentor API error:", data.error)
-        setMessage(`${userMsg}\n\nCagent: Sorry, I encountered an error. Please try again.`)
+        setMessage(`${userMsg}\n\nMuse: Sorry, I encountered an error. Please try again.`)
         setIsLoading(false)
         return
       }
 
       if (data.message) {
         // 显示用户消息和AI回复
-        setMessage(`${userMsg}\n\nCagent: ${data.message}`)
+        setMessage(`${userMsg}\n\nMuse: ${data.message}`)
         setShowChat(true)
         // 不自动设置isHovering，让学生选择是否交互
         
@@ -129,13 +129,13 @@ export default function ProgressMentor({ stage, action, context, userId, positio
         }, 3000)
       } else {
         // 如果没有收到回复，显示提示
-        setMessage(`${userMsg}\n\nCagent: I'm here to help! Feel free to ask me anything about your story.`)
+        setMessage(`${userMsg}\n\nMuse: I'm here to help! Feel free to ask me anything about your story.`)
         setShowChat(true)
         setIsHovering(true)
       }
     } catch (error) {
       console.error("Error sending chat message:", error)
-      setMessage(`${userMsg}\n\nCagent: Sorry, I couldn't process your message. Please try again.`)
+      setMessage(`${userMsg}\n\nMuse: Sorry, I couldn't process your message. Please try again.`)
     } finally {
       setIsLoading(false)
     }
@@ -179,7 +179,7 @@ export default function ProgressMentor({ stage, action, context, userId, positio
         setMessage((prevMsg) => {
           if (prevMsg && prevMsg.startsWith("You:")) {
             // 用户已经发送了消息，现在显示AI回复
-            return `${prevMsg}\n\nCagent: ${data.message}`
+            return `${prevMsg}\n\nMuse: ${data.message}`
           } else {
             // 直接显示AI消息
             return data.message
@@ -300,7 +300,7 @@ export default function ProgressMentor({ stage, action, context, userId, positio
           <div className="relative w-full h-full rounded-full shadow-2xl overflow-hidden animate-float hover:scale-110 transition-transform">
             <Image
               src={MENTOR_IMAGE_URL}
-              alt="Cagent"
+              alt="Muse"
               fill
               className="rounded-full object-cover"
               priority
@@ -311,7 +311,7 @@ export default function ProgressMentor({ stage, action, context, userId, positio
           {/* 名称标签 */}
           <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
             <span className="text-sm font-bold text-pink-600 bg-pink-100/90 backdrop-blur-sm px-4 py-1.5 rounded-full shadow-lg">
-              <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">C</span><span>agent</span>
+              <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">M</span><span>use</span>
             </span>
           </div>
         </div>
@@ -344,8 +344,8 @@ export default function ProgressMentor({ stage, action, context, userId, positio
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-sm font-bold bg-pink-100 px-3 py-1.5 rounded-full">
-                    <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">C</span>
-                    <span className="text-pink-600">agent</span>
+                    <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">M</span>
+                    <span className="text-pink-600">use</span>
                   </span>
                 </div>
                 {isLoading ? (
@@ -379,7 +379,7 @@ export default function ProgressMentor({ stage, action, context, userId, positio
                                isHoveringRef.current = true
                                setShowChat(true)
                              }}
-                             placeholder="Ask Cagent for guidance..."
+                             placeholder="Ask Muse for guidance..."
                              className="w-full px-4 py-2.5 text-base rounded-lg border-2 border-pink-200 focus:border-pink-400 focus:outline-none bg-white/90"
                              style={{ fontFamily: 'var(--font-comic-neue)' }}
                            />
